@@ -21,9 +21,14 @@ upgrade_oh_my_zsh
 
 #### Install Nvidia driver
 
-* <https://www.nvidia.com.tw/Download/index.aspx?lang=tw>
-
 ``` bash
+sudo add-apt-repository ppa:graphics-drivers/ppa 
+sudo apt-get update
+ubuntu-drivers devices
+sudo apt-get install nvidia-driver-415
+sudo service gdm3 start
+reboot
+
 nvidia-smi
 ```
 
